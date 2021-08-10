@@ -1,0 +1,34 @@
+body{
+  background-color: aqua;
+}
+h1{
+  color: salmon;
+  text-align: center;
+  font-size: 40px;
+}
+.grid-container{
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 1px;
+}
+
+.grid-container > div {
+  background-color: salmon;
+  border: 1px solid;
+  text-align: center;
+  font-size: 40px;
+  color: white;
+
+}
+.first{
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.third{
+  grid-column: 2;
+  grid-row: 2 /span 3;
+}
+.sixth{
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
